@@ -7,6 +7,23 @@
 
     $ clib install clib-validate
 
+## Usage
+
+```
+$ ./clib-validate -h
+
+  Usage: clib validate <dir>
+
+    Validate a package.json in the given <dir>.
+  Examples:
+
+    # validate ./package.json
+    $ clib validate
+
+    # validate ./repos/foo/package.json
+    $ clib validate repos/foo
+```
+
 ## License
 
   MIT
