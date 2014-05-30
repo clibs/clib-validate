@@ -1,0 +1,16 @@
+{
+  "name": "clib-validate",
+  "repo": "clibs/clib-validate",
+  "license": "MIT",
+  "description": "validate your package.json",
+  "keywords": ["validate", "json", "package"],
+  "install": "make install",
+  "uninstall": "make uninstall",
+  "dependencies": {
+    "logger": "0.0.0",
+    "stephenmathieson/parse-repo.c": "1.1.0",
+    "stephenmathieson/str-copy.c": "*",
+    "kgabis/parson": "*",
+    "stephenmathieson/path-join.c": "0.0.5"
+  }
+}
