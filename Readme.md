@@ -10,7 +10,7 @@
 ## Usage
 
 ```
-$ ./clib-validate -h
+$ clib help validate
 
   Usage: clib validate <dir>
 
