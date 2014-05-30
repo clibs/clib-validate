@@ -15,6 +15,7 @@ $ clib help validate
   Usage: clib validate <dir>
 
     Validate a package.json in the given <dir>.
+
   Examples:
 
     # validate ./package.json
