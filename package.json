@@ -1,6 +1,7 @@
 {
   "name": "clib-validate",
   "repo": "clibs/clib-validate",
+  "version": "0.0.0",
   "license": "MIT",
   "description": "validate your package.json",
   "keywords": ["validate", "json", "package"],
