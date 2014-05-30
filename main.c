@@ -41,7 +41,7 @@ usage() {
   printf("\n");
   printf("  Usage: clib validate <dir>\n");
   printf("\n");
-  printf("    Validate a package.json in the given <dir>.");
+  printf("    Validate a package.json in the given <dir>.\n");
   printf("\n");
   printf("  Examples:\n");
   printf("\n");
