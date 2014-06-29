@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
-#include "str-copy/str-copy.h"
+#include "strdup/strdup.h"
 #include "path-join/path-join.h"
 #include "parson/parson.h"
 #include "logger/logger.h"
@@ -70,7 +70,7 @@ main(int argc, char **argv) {
   for (int i = 1; i < argc; ++i) {
     if (0 == strncmp("--help", argv[i], 6)) usage();
     if (0 == strncmp("-h", argv[i], 2)) usage();
-    if (!(directory = str_copy(argv[i]))) ERROR("out of memory");
+    if (!(directory = strdup(argv[i]))) ERROR("out of memory");
   }
 
   printf("\n");
