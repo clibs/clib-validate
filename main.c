@@ -64,7 +64,7 @@ main(int argc, char **argv) {
   int rc = 0;
   JSON_Value *root = NULL;
   JSON_Object *obj = NULL;
-  JSON_Array *src = NULL;
+  JSON_Value *src = NULL;
   JSON_Array *keywords = NULL;
 
   for (int i = 1; i < argc; ++i) {
@@ -97,11 +97,15 @@ main(int argc, char **argv) {
   require_string(description);
   require_string(license);
 
-  if (!(src = json_object_get_array(obj, "src"))) {
+  src = json_object_get_value(obj, "src");
+  if (!src) {
     // if there are no sources, then you need an
     // install key.  otherwise, there's no point
     // in your lib.
     require_string(install);
+  }
+  else if (json_value_get_type(src) != JSONArray) {
+    WARN("src should be an array")
   }
 
   if (!(keywords = json_object_get_array(obj, "keywords"))) {
