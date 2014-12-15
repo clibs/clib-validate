@@ -9,9 +9,9 @@
   "uninstall": "make uninstall",
   "dependencies": {
     "logger": "0.0.0",
-    "stephenmathieson/parse-repo.c": "1.1.0",
+    "stephenmathieson/parse-repo.c": "1.1.1",
     "strdup": "0.0.0",
     "kgabis/parson": "*",
-    "stephenmathieson/path-join.c": "0.0.5"
+    "stephenmathieson/path-join.c": "0.0.6"
   }
 }
