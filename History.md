@@ -1,4 +1,10 @@
 
+0.1.1 / 2016-08-23
+==================
+
+  * Merge pull request #4 from yorkie/fix/gh-3
+  * deps: update logger@0.0.1
+
 0.1.0 / 2014-12-15
 ==================
 
