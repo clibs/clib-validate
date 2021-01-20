@@ -1,4 +1,4 @@
- This repository has been merged into [clibs/clib](https://github.com/clibs/clib)
+ # This repository has been merged into [clibs/clib](https://github.com/clibs/clib)
  
  ----
 
